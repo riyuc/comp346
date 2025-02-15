@@ -1,3 +1,4 @@
+package COMP346_A1.src.java;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -9,7 +10,7 @@
  *
  * @author Kerly Titus
  */
-public class Network {
+public class Network extends Thread{
     
     private static int maxNbPackets;                           /* Maximum number of simultaneous transactions handled by the network buffer */
     private static int inputIndexClient, inputIndexServer, outputIndexServer, outputIndexClient;                   /* Network buffer indices for accessing the input buffer (inputIndexClient, outputIndexServer) and output buffer (inputIndexServer, outputIndexClient) */
@@ -556,7 +557,16 @@ public class Network {
     	
     	while (true)
     	{
-		/* Implement here the code for the run method ... */
+            /* Implement here the code for the run method ... */
+            if (
+                getClientConnectionStatus().equals("disconnected") && 
+                getServerConnectionStatus().equals("disconnected")
+            ) {
+                System.out.println("\n Terminating network thread - Client and Server disconnected");
+                break;
+            } else {
+                Thread.yield();
+            }
     	}    
     }
 }
