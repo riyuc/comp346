@@ -1,4 +1,4 @@
-package COMP346_A1.src.java;
+package COMP346_A1.pa1_40178369.src.java;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -43,7 +43,7 @@ public class Network extends Thread{
             clientConnectionStatus = "idle";
             serverConnectionStatus = "idle";
             portID = 0;
-            maxNbPackets = 20;
+            maxNbPackets = 10;
             inComingPacket = new Transactions[maxNbPackets];
             outGoingPacket = new Transactions[maxNbPackets];
             for (i=0; i < maxNbPackets; i++)

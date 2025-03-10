@@ -1,4 +1,4 @@
-package COMP346_A1.src.java;
+package COMP346_A1.pa1_40178369.src.java;
 
 import java.util.Scanner;
 import java.io.FileInputStream;
@@ -205,7 +205,7 @@ public class Server extends Thread{
         	 {
         		 System.out.println("\n DEBUG : Server.processTransactions() - transferring in account " + trans.getAccountNumber());
         		 
-        		 objNetwork.transferIn(trans);  /* Transfer a transaction from the network input buffer */
+        		 objNetwork.transferIn(trans);                              /* Transfer a transaction from the network input buffer */
              
         		 accIndex = findAccount(trans.getAccountNumber());
         		 /* Process deposit operation */
