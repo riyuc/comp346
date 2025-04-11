@@ -1,4 +1,4 @@
-package COMP346_A1.src.java;
+package A1_346.src.java;
 
 /*
  * To change this license header, choose License Headers in Project Properties.

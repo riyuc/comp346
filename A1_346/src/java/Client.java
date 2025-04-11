@@ -1,4 +1,4 @@
-package COMP346_A1.src.java;
+package A1_346.src.java;
 
 import java.util.Scanner;
 import java.io.FileInputStream;
