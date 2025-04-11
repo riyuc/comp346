@@ -1,0 +1,2 @@
+## Why I chose synchronized statements instead of synchronized methods
+If you use synchonized methods, for example in our assignment, synchronized deposit(), then we are declaring that deposit is its own critical section, and the same with other functions like withdraw() or query(), meaning now we have different critical sections. This would stop us from having deposit, withdraw at the same time.

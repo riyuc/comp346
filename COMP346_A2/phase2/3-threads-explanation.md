@@ -1,0 +1,2 @@
+# What happens when we implement another thread
+I saw about 30% increase in performance after adding another thread. with 2 threads performance was about 350ms, for 3 threads its about 250. This is because of the fact that we have already correctly synchronized the functions in the two threads implementation, so now when we add another thread it just increases performance.
